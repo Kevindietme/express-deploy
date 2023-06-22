@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.get("/test", (req,res) => res.send("It's working"));
 
-app.get("/.candy", getAllCandy);
-app.post("/.candy", addNewCandy);
+app.get("/candy", getAllCandy);
+app.post("/candy", addNewCandy);
 
 export const api = onRequest(app) //cloud function 
